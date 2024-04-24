@@ -192,3 +192,34 @@ h1{
         display: block;
     }
 }
+/* Styles for Qari images */
+.qari-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.qari-list li {
+    margin: 10px;
+    text-align: center;
+}
+
+.qari-list li img {
+    border-radius: 50%; /* Make the image rounded */
+    width: 100px; /* Set the width of the image */
+    height: 100px; /* Set the height of the image */
+    object-fit: cover; /* Cover the entire area with the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.qari-list li img:hover {
+    transform: scale(1.1); /* Scale the image on hover */
+}
+
+.qari-list li span {
+    display: block;
+    margin-top: 5px;
+}
